@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Piano Player</title>
+     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+</head>
+<style>
+    body{
+    background-color: black;
+    }
+.box{
+        width: 850px;
+        height: 620px;
+        background-color: rgb(91, 91, 91);
+        margin-left: 270px;
+        margin-top: 80px;
+        border-radius: 50px;
+    }
+    p{
+        font-family: Nunito;
+        font-size: 30px;
+        margin-top: 20px;
+        margin-left: 80px;
+    }
+.btn{
+        width: 180px;
+        height: 180px;
+        background-color: rgb(249, 164, 154);
+        border-radius: 100%;
+        border: 1px solid gray;
+        margin-top: 20px;
+        margin-left: 20px;
+        outline: none;
+        float: left;
+        opacity: 0.5;
+    }
+.btn-2{
+        width: 180px;
+        height: 180px;
+        
+        border-radius: 100%;
+        border: 1px solid gray;
+        margin-top: 20px;
+        margin-left: 20px;
+        outline: none;
+        float: right;
+        margin-right: 20px;
+        opacity: 0.5;
+    }
+.btn-3{
+        width: 180px;
+        height: 180px;
+        
+        border-radius: 100%;
+        border: 1px solid gray;
+        margin-top: 20px;
+        margin-left: 20px;
+        outline: none;
+        float: right;
+         opacity: 0.5;
+    }
+.btn-4{
+        width: 180px;
+        height: 180px;
+        
+        border-radius: 100%;
+        border: 1px solid gray;
+        margin-top: 20px;
+        margin-left: 20px;
+        outline: none;
+         margin-left: 35px;
+        opacity: 0.5;
+        
+    }
+.btn-5{
+        width: 180px;
+        height: 180px;
+        
+        border-radius: 100%;
+        border: 1px solid gray;
+        margin-top: 20px;
+        margin-left: 20px;
+        outline: none;
+        float: left;
+        opacity: 0.5;                
+        
+    }
+.btn-6{
+        width: 180px;
+        height: 180px;
+        
+        border-radius: 100%;
+        border: 1px solid gray;
+        margin-top: 20px;
+        margin-left: 20px;
+        outline: none;
+        float: right;
+        margin-right: 20px;
+        opacity: 0.5;
+                            
+    }
+.btn-7{
+        width: 180px;
+        height: 180px;
+        
+        border-radius: 100%;
+        border: 1px solid gray;
+        margin-top: 20px;
+        margin-left: 20px;
+        outline: none;
+        float: right;
+        opacity: 0.5;
+    }
+.btn-8{
+        width: 180px;
+        height: 180px;
+        
+        border-radius: 100%;
+        border: 1px solid gray;
+        margin-top: 20px;
+        margin-left: 20px;
+        outline: none;
+        float: right;
+        margin-right: 10px;
+        opacity: 0.5;
+    }
+.btn-9{
+        width: 180px;
+        height: 180px;
+        
+        border-radius: 100%;
+        border: 1px solid gray;
+        margin-top: 20px;
+        margin-left: 20px;
+        outline: none;
+        float: left;
+        opacity: 0.5;
+    }
+.btn-10{
+         width: 180px;
+        height: 180px;
+        
+        border-radius: 100%;
+        border: 1px solid gray;
+        margin-top: 20px;
+        margin-left: 20px;
+        outline: none;
+        float: right;
+        margin-right: 20px;
+        opacity: 0.5;
+    }
+.btn-11{
+        width: 180px;
+        height: 180px;
+        
+        border-radius: 100%;
+        border: 1px solid gray;
+        margin-top: 20px;
+        margin-left: 20px;
+        outline: none;
+        float: right;
+        opacity: 0.5;   
+        
+    }
+.btn-12{
+        width: 180px;
+        height: 180px;
+        
+        border-radius: 100%;
+        border: 1px solid gray;
+        margin-top: 20px;
+        margin-left: 20px;
+        outline: none;
+        float: right;
+        margin-right: 10px;   
+        opacity: 0.5;
+    }
+    
+    </style>
+<body>
+    <div class="container">
+       <p style="color: white">Play the music as you want...</p>
+        <div class="box">
+            <div class="red">
+                <button class="btn" id="btn-1" onclick="playAudio()" type="button" onmouseout="brightOff()"></button>
+                <audio src="tune-48.wav" id="audio"></audio>
+            </div>
+                <div class="orange">
+                <button class="btn-2" id="btn-2" onclick="playAudio2()" type="button" style="background-color:rgb(239, 151, 95)" onmouseout="briOff()"></button>
+                <audio src="sound.mp3.wav" id="audio2"></audio>
+            </div>
+                <div class="blue">
+                <button class="btn-3" id="btn-3" onclick="playAudio3()" type="button" style="background-color:rgb(95, 179, 239)" onmouseout="bO()"></button>
+                <audio src="tune-1.wav" id="audio3"></audio>
+            </div>
+                <div class="yellow">
+                <button class="btn-4" id="btn-4" onclick="playAudio4()" type="button" style="background-color: rgb(239, 242, 152)"onmouseout="brightOff4()"></button>
+                <audio src="tune-39.wav" id="audio4"></audio>
+            </div>
+                <div class="palegreen">
+                <button class="btn-5" id="btn-5" onclick="playAudio5()" type="button" style="background-color: rgb(152, 242, 178)"onmouseout="brightOf()"></button>
+                <audio src="tune-40.wav" id="audio5"></audio>
+            </div>
+                <div class="lightpurple">
+                <button class="btn-6" id="btn-6" onclick="playAudio6()" type="button" style="background-color:rgb(142, 145, 237)" onmouseout="brightOff6()"></button>
+                <audio src="tune-41.wav" id="audio6"></audio>
+            </div>
+                <div class="khaki">
+                <button class="btn-7" id="btn-7" onclick="playAudio7()" type="button" style="background-color:rgb(130, 113, 32)" onmouseout="brightOff7()"></button>
+                <audio src="tune-42.wav" id="audio7"></audio>
+            </div>
+                <div class="pink">
+                <button class="btn-8" id="btn-8" onclick="playAudio8()" type="button" style="background-color:rgb(249, 112, 247)" onmouseout="brightOff8()"></button>
+                <audio src="tune-44.wav" id="audio8"></audio>
+            </div>
+                <div class="navy blue">
+                <button class="btn-9" id="btn-9" onclick="playAudio9()" type="button" style="background-color:rgb(43, 41, 89)" onmouseout="brightOff9()"></button>
+                <audio src="tune-45.wav" id="audio9"></audio>
+            </div>
+                <div class="pale yellow">
+                <button class="btn-10" id="btn-10" onclick="playAudio10()" type="button" style="background-color:rgb(207, 211, 86)" onmouseout="brightOff10()"></button>
+                <audio src="tune-43.wav" id="audio10"></audio>
+            </div>
+                <div class="aqua">
+                <button class="btn-11" id="btn-11" onclick="playAudio11()" type="button" style="background-color: rgb(2, 255, 221)"onmouseout="brightOff11()"></button>
+                <audio src="tune-46.wav" id="audio11"></audio>
+            </div>
+                <div class="darkred">
+                <button class="btn-12" id="btn-12" onclick="playAudio12()" type="button" style="background-color: darkred" onmouseout="brightOff12()"></button>
+                <audio src="tune-47.wav" id="audio12"></audio>
+            </div>
+        </div>
+    </div>
+    <script> 
+     function playAudio(){
+         document.getElementById('btn-1').style.opacity = "1";
+         
+         var a = document.getElementById("audio");
+         if (a.paused){
+             a.play();
+             
+         }else{
+             a.currentTime = 0
+         }
+         
+     } 
+        function brightOff(){
+            document.getElementById('btn-1').style.opacity = "0.5";
+            
+        }
+        function briOff(){
+            document.getElementById('btn-2').style.opacity = "0.5";
+        }
+        function bO(){
+            document.getElementById('btn-3').style.opacity = "0.5";
+        }
+        function playAudio2(){
+        document.getElementById('btn-2').style.opacity = "1";         
+         var b = document.getElementById("audio2");
+         if(b.paused){
+         b.play();
+         }else{
+          b.currentTime=0     
+         }
+     } 
+        function playAudio3(){
+        document.getElementById('btn-3').style.opacity = "1";         
+         var c = document.getElementById("audio3");
+         if(c.paused){    
+         c.play();
+         }else{
+         c.currentTime=0     
+         }
+     } 
+        function playAudio4(){
+        document.getElementById('btn-4').style.opacity = "1";                 
+         var d = document.getElementById("audio4");
+         if(d.paused){    
+         d.play();
+         }else{
+         d.currentTime=0     
+         }
+     } 
+         function playAudio5(){
+         document.getElementById('btn-5').style.opacity = "1";     
+         var e = document.getElementById("audio5");
+         if(e.paused){
+             e.play();
+         
+         }else{
+             e.currentTime=0
+         }
+     } 
+         function playAudio6(){
+         document.getElementById('btn-6').style.opacity = "1";     
+         var f = document.getElementById("audio6");
+         if(f.paused){     
+         f.play();
+         }else{
+          f.currentTime=0 
+         }
+     } 
+         function playAudio7(){
+        document.getElementById('btn-7').style.opacity = "1";     
+         var g = document.getElementById("audio7");
+          if(g.paused){     
+         g.play();
+          }else{
+            g.currentTime=0
+          }
+     }
+        function playAudio8(){
+        document.getElementById('btn-8').style.opacity = "1";    
+         var h = document.getElementById("audio8");
+         if(h.paused){
+         h.play();
+         }else{
+          h.currentTime=0     
+         }
+     }
+         function playAudio9(){
+         document.getElementById('btn-9').style.opacity = "1";
+         var i = document.getElementById("audio9");
+         if(i.paused){     
+         i.play();
+         }else{
+          i.currentTime=0     
+         }
+     }
+         function playAudio10(){
+         document.getElementById('btn-10').style.opacity = "1";     
+         var j = document.getElementById("audio10");
+         if(j.paused){
+         j.play();
+         }else{
+          j.currentTime=0
+         }
+     }
+        function playAudio11(){
+        document.getElementById('btn-11').style.opacity = "1";    
+         var k = document.getElementById("audio11");
+         if(k.paused){
+         k.play();
+         }else{
+         k.currentTime=0
+         }
+     }
+         function playAudio12(){
+         document.getElementById('btn-12').style.opacity = "1";
+         var l = document.getElementById("audio12");
+         if (l.paused){
+             l.play();
+         }else{
+             l.currentTime=0
+         }
+         }
+         function brightOf(){
+             document.getElementById('btn-5').style.opacity=0.5;
+         }     
+         function brightOff4(){
+             document.getElementById('btn-4').style.opacity=0.5;
+         }
+         function brightOff6(){
+             document.getElementById('btn-6').style.opacity=0.5;
+         }
+         function brightOff7(){
+             document.getElementById('btn-7').style.opacity=0.5;
+         }
+         function brightOff8(){
+             document.getElementById('btn-8').style.opacity=0.5;
+         }
+         function brightOff9(){
+             document.getElementById('btn-9').style.opacity=0.5;
+         }
+         function brightOff10(){
+             document.getElementById('btn-10').style.opacity=0.5;
+         }
+         function brightOff11(){
+             document.getElementById('btn-11').style.opacity=0.5;
+         }
+         function brightOff12(){
+             document.getElementById('btn-12').style.opacity= 0.5;
+         }
+    </script>
+</body>
+
+</html>
